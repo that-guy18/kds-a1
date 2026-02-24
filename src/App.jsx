@@ -13,6 +13,95 @@ const scrollTo = (id) => {
   if (el) el.scrollIntoView({ behavior: "smooth" });
 };
 
+const portfolioItems = [
+  {
+    url: "www.2ndAmendment.com",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    bg: "#1a2340",
+    label: "E-Commerce",
+    preview: (
+      <div style={{ background: "#0a0e1a", width: "100%", height: "100%", padding: "12px", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+          <div style={{ color: "#e55", fontWeight: "900", fontSize: "13px", letterSpacing: "1px" }}>2<sup>nd</sup> AMENDMENT</div>
+          <div style={{ background: "#e55", color: "white", padding: "4px 10px", fontSize: "10px", fontWeight: "700", borderRadius: "2px" }}>SEARCH</div>
+        </div>
+        <div style={{ background: "linear-gradient(135deg,#1a2340,#2a3560)", borderRadius: "4px", padding: "24px 16px", position: "relative", overflow: "hidden" }}>
+          <div style={{ color: "white", fontWeight: "900", fontSize: "18px", marginBottom: "4px" }}>HATFIELD USA12T</div>
+          <div style={{ color: "#f90", fontSize: "10px", marginBottom: "16px" }}>HATFIELD USA12T SAS 12/20 FULL RL</div>
+          <div style={{ display: "flex", gap: "8px" }}>
+            <div style={{ background: "#e55", color: "white", padding: "6px 14px", fontSize: "10px", fontWeight: "700", borderRadius: "2px" }}>SHOP NOW</div>
+            <div style={{ background: "transparent", border: "1px solid #aaa", color: "white", padding: "6px 14px", fontSize: "10px", borderRadius: "2px" }}>READ MORE</div>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    url: "www.kickeez.com",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    bg: "#1a1a1a",
+    label: "Website",
+    preview: (
+      <div style={{ background: "#111", width: "100%", height: "100%", padding: "12px", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+          <div style={{ color: "#f90", fontWeight: "900", fontSize: "13px" }}>KICK-EEZ ⊙</div>
+          <div style={{ display: "flex", gap: "12px" }}>
+            <span style={{ color: "#aaa", fontSize: "10px" }}>SHOP NOW ▾</span>
+            <span style={{ color: "#aaa", fontSize: "10px" }}>ABOUT US ▾</span>
+          </div>
+        </div>
+        <div style={{ background: "linear-gradient(135deg,#1a1a1a,#2a2a2a)", borderRadius: "4px", padding: "24px 16px", border: "2px solid #f90" }}>
+          <div style={{ color: "white", fontWeight: "900", fontSize: "20px", lineHeight: "1.2", marginBottom: "16px" }}>THE MOST<br/>COMFORTABLE<br/>RECOIL PADS</div>
+          <div style={{ background: "#f90", color: "white", padding: "6px 14px", fontSize: "10px", fontWeight: "700", display: "inline-block", borderRadius: "2px" }}>SHOP NOW</div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    url: "www.stylehub.com",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    bg: "#f9f0ff",
+    label: "UI/UX Design",
+    preview: (
+      <div style={{ background: "#f9f0ff", width: "100%", height: "100%", padding: "12px", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
+          <div style={{ color: "#7c3aed", fontWeight: "900", fontSize: "14px" }}>StyleHub</div>
+          <div style={{ display: "flex", gap: "10px" }}>
+            {["Women","Men","Kids","Sale"].map(l => <span key={l} style={{ color: "#555", fontSize: "10px" }}>{l}</span>)}
+          </div>
+        </div>
+        <div style={{ background: "linear-gradient(135deg,#7c3aed,#a855f7)", borderRadius: "4px", padding: "28px 16px", textAlign: "center" }}>
+          <div style={{ color: "white", fontWeight: "900", fontSize: "18px", marginBottom: "8px" }}>NEW SEASON<br/>COLLECTION</div>
+          <div style={{ background: "white", color: "#7c3aed", padding: "6px 18px", fontSize: "10px", fontWeight: "700", display: "inline-block", borderRadius: "20px" }}>SHOP NOW</div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    url: "www.datasync.io",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    bg: "#e8f4fd",
+    label: "App Development",
+    preview: (
+      <div style={{ background: "#e8f4fd", width: "100%", height: "100%", padding: "12px", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
+          <div style={{ color: "#0369a1", fontWeight: "900", fontSize: "14px" }}>DataSync</div>
+          <div style={{ background: "#0369a1", color: "white", padding: "4px 10px", fontSize: "10px", borderRadius: "4px" }}>Dashboard</div>
+        </div>
+        <div style={{ background: "white", borderRadius: "4px", padding: "16px", boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}>
+          <div style={{ color: "#0369a1", fontWeight: "800", fontSize: "16px", marginBottom: "8px" }}>Real-Time Analytics</div>
+          <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+            {[60,80,45,90,70].map((h,i) => (
+              <div key={i} style={{ flex: 1, background: `rgba(3,105,161,${h/100})`, height: `${h * 0.6}px`, borderRadius: "2px 2px 0 0", alignSelf: "flex-end" }}/>
+            ))}
+          </div>
+          <div style={{ color: "#64748b", fontSize: "10px" }}>Weekly performance overview</div>
+        </div>
+      </div>
+    ),
+  },
+];
+
 const testimonials = [
   {
     name: "Harriet Mitchell",
@@ -48,6 +137,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [activeVideo, setActiveVideo] = useState(0);
+  const [activePortfolioFilter, setActivePortfolioFilter] = useState("All");
 
   const prevTestimonial = () =>
     setActiveTestimonial((p) => (p === 0 ? testimonials.length - 1 : p - 1));
@@ -58,6 +148,11 @@ function App() {
     scrollTo(id);
     setMenuOpen(false);
   };
+  const portfolioFilters = ["All", "E-Commerce", "Website", "UI/UX Design", "App Development"];
+  const filteredPortfolio =
+    activePortfolioFilter === "All"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.label === activePortfolioFilter);
 
   return (
     <>
@@ -275,6 +370,69 @@ function App() {
         <div className="services-cta">
           <button className="get-started-btn" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
             Get Started →
+          </button>
+        </div>
+      </section>
+
+      {/* OUR PORTFOLIO */}
+      <section className="portfolio-section" id="portfolio">
+        <div className="portfolio-header">
+          <p className="portfolio-label">PORTFOLIO</p>
+          <h2>OUR PORTFOLIO</h2>
+          <p className="portfolio-sub">Explore our latest projects and digital solutions</p>
+        </div>
+
+        {/* Filter Tabs */}
+        <div className="portfolio-filters">
+          {portfolioFilters.map((filter) => (
+            <button
+              key={filter}
+              className={`portfolio-filter-btn ${activePortfolioFilter === filter ? "filter-active" : ""}`}
+              onClick={() => setActivePortfolioFilter(filter)}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Portfolio Grid */}
+        <div className="portfolio-grid">
+          {filteredPortfolio.map((item, i) => (
+            <div className="portfolio-card" key={i}>
+              {/* Browser Chrome Preview */}
+              <div className="portfolio-preview-wrap">
+                <div className="browser-chrome">
+                  <div className="browser-dots">
+                    <span className="bdot bdot-red"></span>
+                    <span className="bdot bdot-yellow"></span>
+                    <span className="bdot bdot-green"></span>
+                  </div>
+                  <div className="browser-url">{item.url}</div>
+                </div>
+                <div className="portfolio-preview" style={{ background: item.bg }}>
+                  {item.preview}
+                </div>
+              </div>
+
+              {/* Card Info */}
+              <div className="portfolio-card-body">
+                <span className="portfolio-tag">{item.label}</span>
+                <h4 className="portfolio-url">{item.url}</h4>
+                <p className="portfolio-desc">{item.desc}</p>
+                <a href={`https://${item.url}`} target="_blank" rel="noreferrer" className="portfolio-link">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M7 17L17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="portfolio-cta">
+          <button className="get-started-btn" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
+            Start Your Project →
           </button>
         </div>
       </section>
