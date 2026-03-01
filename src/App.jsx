@@ -194,7 +194,7 @@ function App() {
           <a onClick={() => handleNav("portfolio")}>Our Portfolio</a>
           <a onClick={() => handleNav("testimonials")}>Testimonials</a>
           <a onClick={() => handleNav("contact")}>Contact Us</a>
-          <a href="tel:9045301702" className="mobile-call">📞 9045301702</a>
+          <a href="tel:+919045301702" className="mobile-call">📞 +919045301702</a>
         </div>
       )}
 
@@ -209,11 +209,11 @@ function App() {
             <button className="btn-enquiry" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
               QUICK ENQUIRY
             </button>
-            <button className="btn-phone" onClick={() => window.location.href = 'tel:9045301702'}>
+            <button className="btn-phone" onClick={() => window.location.href = 'tel:+919045301702'}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
               </svg>
-              9045301702
+              +919045301702
             </button>
           </div>
 
@@ -577,7 +577,7 @@ function App() {
               </div>
               <div>
                 <strong>SEND US MAIL</strong>
-                <p>Info@Kusheldigi.Com</p>
+                <p><a href="mailto:Info@Kusheldigi.Com">Info@Kusheldigi.Com</a></p>
               </div>
             </div>
 
@@ -589,7 +589,7 @@ function App() {
               </div>
               <div>
                 <strong>CALL US</strong>
-                <p>+91 9045301702</p>
+                <p><a href="tel:+919045301702">+91 9045301702</a></p>
               </div>
             </div>
           </div>
@@ -622,7 +622,7 @@ function App() {
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
             </div>
-            <span>Shubham@Kusheldigi.Com</span>
+            <span><a href="mailto:Shubham@Kusheldigi.Com">Shubham@Kusheldigi.Com</a></span>
           </div>
 
           <div className="footer-contact-item">
@@ -631,7 +631,7 @@ function App() {
                 <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
               </svg>
             </div>
-            <span>9045301702</span>
+            <span><a href="tel:+919045301702">+91 9045301702</a></span>
           </div>
         </div>
 
