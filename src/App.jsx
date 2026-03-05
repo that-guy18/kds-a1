@@ -159,10 +159,16 @@ function App() {
       {/* NAVBAR */}
       <nav className="nav">
         <div className="logo" onClick={() => scrollTo("hero")} style={{ cursor: "pointer" }}>
-          <div className="logo-icon">KDS</div>
-          <div className="logo-text">
-            <h2>Kushel Digi</h2>
-            <span>Solutions</span>
+          <div className="logo-icon">
+            <img src="https://media.designrush.com/agencies/792788/conversions/Kushel-Digi-Solutions-logo-profile.jpg" alt="Kushel Digi Solutions"
+            style={{ 
+            height: '150%', 
+            maxHeight: '65px', 
+            width: 'auto',
+            alignContent: 'center',
+            objectFit: 'contain'
+          }} 
+          />
           </div>
         </div>
 
